@@ -1,1 +1,1 @@
-# My-Neon-Crayons
+curl -sS https://raw.githubusercontent.com/Vivek-Gohel/Monokai-Neon-Unified/main/installer.sh | bash
