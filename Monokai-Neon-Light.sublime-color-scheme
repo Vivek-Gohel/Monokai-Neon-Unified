@@ -1,0 +1,75 @@
+{
+    "name": "Monokai Light Unified",
+    "author": "Vivek Gohel",
+    "variables": {
+        "background": "#FAFAFA",
+        "foreground": "#141414",
+        "neon_pink": "#F52181",
+        "neon_cyan": "#11d9f5",
+        "neon_orange": "#FF8C00",
+        "neon_lime": "#4aed4f",
+        "neon_purple": "#d142ed",
+        "warm_grey": "#a6a086",
+        "dark_blue": "#1867b8"
+    },
+    "globals": {
+        "foreground": "var(foreground)",
+        "background": "var(background)",
+        "caret": "#000000",
+        "selection": "#ADD6FF",
+        "line_highlight": "#EFEEED"
+    },
+    "rules": [
+        {
+            "name": "Base Foreground and Terminators",
+            "scope": "source, punctuation.terminator, punctuation.separator",
+            "foreground": "var(foreground)",
+            "font_style": ""
+        },
+        {
+            "name": "Control Logic and Operators",
+            "scope": "keyword.control, keyword.operator, keyword.control.import, keyword.control.directive, punctuation.definition.directive",
+            "foreground": "var(neon_pink)",
+            "font_style": "bold"
+        },
+        {
+            "name": "Types and Namespaces",
+            "scope": "storage.type, storage.modifier, keyword.other.namespace, support.type, support.class, entity.name.type, entity.name.class, support.other.namespace",
+            "foreground": "var(neon_cyan)",
+            "font_style": "bold italic"
+        },
+        {
+            "name": "Functions and IO Streams",
+            "scope": "entity.name.function, support.function, variable.function, support.variable, variable.other.member",
+            "foreground": "var(neon_lime)",
+            "font_style": "bold"
+        },
+        {
+            "name": "Strings",
+            "scope": "string, punctuation.definition.string",
+            "foreground": "var(neon_orange)",
+            "font_style": "bold"
+        },
+        {
+            "name": "Numbers",
+            "scope": "constant.numeric, constant.language",
+            "foreground": "var(neon_purple)",
+            "font_style": "bold"
+        },
+        {
+            "name": "Comments",
+            "scope": "comment, punctuation.definition.comment",
+            "foreground": "var(warm_grey)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Dark Blue Brackets",
+            "scope": "meta.brace, punctuation.section.block, punctuation.section.group, punctuation.section.parens, punctuation.section.brackets, punctuation.definition.parameters, punctuation.definition.arguments",
+            "foreground": "var(dark_blue)",
+            "font_style": "bold"
+        }
+    ]
+}
+
+
+
