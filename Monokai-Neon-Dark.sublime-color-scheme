@@ -1,0 +1,74 @@
+
+
+{
+    "name": "Monokai Neon Night Unified",
+    "author": "Vivek Gohel",
+    "variables": {
+        "background": "#0D0D0D",   // Deep OLED Black (Makes neon POP)
+        "foreground": "#F8F8F8",   // Clean White
+        "neon_pink": "#FF2277",    // Switched to Hot Neon Pink for more glow
+        "neon_cyan": "#00E5FF",    // Sharper Electric Cyan
+        "neon_orange": "#FF8C00",  
+        "neon_lime": "#39FF14",    // "Alien Green" (Most vibrant neon lime)
+        "neon_purple": "#D142ED", 
+        "warm_grey": "#666666",   
+        "dark_blue": "#38bdf8"     // Bright Sky Blue for brackets
+    },
+    "globals": {
+        "foreground": "var(foreground)",
+        "background": "var(background)",
+        "caret": "#FFFFFF",
+        "selection": "#3E4451",
+        "line_highlight": "#1A1A1A"
+    },
+    "rules": [
+        {
+            "name": "Base Foreground and Terminators",
+            "scope": "source, punctuation.terminator, punctuation.separator",
+            "foreground": "var(foreground)",
+            "font_style": ""
+        },
+        {
+            "name": "Control Logic and Operators",
+            "scope": "keyword.control, keyword.operator, keyword.control.import, keyword.control.directive, punctuation.definition.directive",
+            "foreground": "var(neon_pink)",
+            "font_style": "bold"
+        },
+        {
+            "name": "Types and Namespaces",
+            "scope": "storage.type, storage.modifier, keyword.other.namespace, support.type, support.class, entity.name.type, entity.name.class, support.other.namespace",
+            "foreground": "var(neon_cyan)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Functions and IO Streams",
+            "scope": "entity.name.function, support.function, variable.function, support.variable, variable.other.member",
+            "foreground": "var(neon_lime)",
+            "font_style": "bold"
+        },
+        {
+            "name": "Strings",
+            "scope": "string, punctuation.definition.string",
+            "foreground": "var(neon_orange)",
+            "font_style": ""
+        },
+        {
+            "name": "Numbers",
+            "scope": "constant.numeric, constant.language",
+            "foreground": "var(neon_purple)",
+            "font_style": ""
+        },
+        {
+            "name": "Comments",
+            "scope": "comment, punctuation.definition.comment",
+            "foreground": "var(warm_grey)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Dark Blue Brackets",
+            "scope": "meta.brace, punctuation.section.block, punctuation.section.group, punctuation.section.parens, punctuation.section.brackets, punctuation.definition.parameters, punctuation.definition.arguments",
+            "foreground": "var(dark_blue)",
+            "font_style": ""
+        }
+    ]
+}
